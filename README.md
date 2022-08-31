@@ -17,7 +17,7 @@
 
 - 寻找沙盒Documents具体路径，我们需要用Cycript找出微信的Documents具体路径。输入命令`cycript -p WeChat`
 
-- 寻找沙盒Documents具体路径，我们需要用Cycript找出微信的Documents具体路径。输入命令`cycript -p WeChat`打开微信，进入cy#模式输入`NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, ES)[0]`就能找出Documents的具体路径，或者使用`cy# directory = NSHomeDirectory()，也可以得到沙河位置（缺少/Documents）。`
+- 寻找沙盒Documents具体路径，我们需要用Cycript找出微信的Documents具体路径。输入命令`cycript -p WeChat`打开微信，进入cy#模式输入`NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]`就能找出Documents的具体路径，或者使用`cy# directory = NSHomeDirectory()，也可以得到沙河位置（缺少/Documents）。`
 
   ![图三](https://github.com/PengJiang520/Crack/blob/main/图三.jpg?raw=true)
 
